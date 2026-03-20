@@ -29,16 +29,24 @@ body {
   color: #f1d2ab;
   
 }
+.tall-text{  font-family: "Saira Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;}
 
 
 }
 
-@keyframes slide {
+@keyframes marquee {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
 
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
+}
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 5s linear infinite;
 }
